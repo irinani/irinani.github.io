@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Raleway&display=swap');
+
+/* Variables */
+:root {
+  --red: #EF476F;
+  --red-light: #FCD5CE;
+  --green: #06D6A0;
+  --yellow: #FFD166;
+  --blue: #118AB2;
+  --blue-dark: #073B4C;
+  --light: #F8EDEB;
+  --dark: #333333;
+  --transition: 0.2s ease all;
+}
+
+/* General styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  background: var(--light);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 87.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 2rem;
+}
+
+.hero-text,
+.content-text {
+  max-width: 35rem;
+  padding-right: 2rem;
+}
+
+.hero-bird,
+.irina {
+  margin-left: auto;
+  max-width: 30vw;
+  align-self: flex-end;
+}
+
+
+.hero {
+  background-color: var(--red-light);
+  background-image: url('../img/hero-bottom.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  margin-bottom: 4rem;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-info-item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  align-items: start;
+}
+
+.hero-icon {
+  margin-right: 1rem;
+}
+
+.hero-info-item a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--dark);
+  transition: var(--transition);
+}
+
+.hero-info-item a:hover,
+.hero-info-itemm a:focus {
+  color: var(--red);
+}
+
+.content {
+  display: flex;
+}
+
+.experience-item {
+  margin-bottom: 3rem;
+}
+
+.experience-company {
+  margin-bottom: 0;
+}
+
+.experience-date {
+  font-weight: 700;
+}
+
+.experience-desc {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  ul {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .hero-container,
+  .content {
+    flex-direction: column;
+  }
+
+  .hero-text,
+  .content-text {
+    padding-right: 0;
+  }
+
+  .hero-bird,
+  .irina {
+    max-width: 18rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
