@@ -363,15 +363,7 @@ ul {
     transform: rotate(-45deg);
   }
 
-  /* 33% {
-    transform: rotate(-60deg);
-  } */
-
   50% {
     transform: rotate(-30deg);
   }
-
-  /* 100% {
-    transform: rotate(-30deg);
-  } */
 }
